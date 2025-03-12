@@ -7,3 +7,5 @@ from diffusers import StableDiffusionImg2ImgPipeline, EulerDiscreteScheduler, Eu
     DDIMScheduler, AutoencoderKL
 # from prompt_engineering import art_styles
 from PIL import Image
+# from prompt_engineering import art_styles
+from PIL import Image
