@@ -8,9 +8,6 @@
     <body>
 <div class="container mb-5">      
             <?php  foreach(array_chunk($arr, 4) as $value): ?>
-                <div class="row">
-                    
-                </div>
                 <?php  endforeach; ?>
                 
     </div>
