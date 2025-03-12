@@ -1,0 +1,14 @@
+img = pipe(
+        prompt_stylized,
+        image=init_image,
+        height=768,
+        width=512,
+        negative_prompt=negative_prompt,
+        scheduler=DDIMScheduler.from_config(pipe.scheduler.config),
+        strength=1,
+        num_inference_steps=num_inference_steps,
+        callback_on_step_end=callback,
+        guidance_scale=25
+    ).images[0]
+    img_path = uniquify(os.path.join(SAVE_PATH, generation_path, ' - ' + shorted_prompt) + '.png')
+    print(img_path)
